@@ -126,7 +126,7 @@ function draw() {
     //creator Information
     text("created by Anshum Bhargav",width/2,20);
     
-    if(touches.length>0 && touches.breadth>0 || mousePressedOver(restart)) {
+    if(touches.length>0 || mousePressedOver(restart)) {
       reset();
     }
   }
