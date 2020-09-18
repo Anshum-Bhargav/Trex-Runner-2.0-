@@ -119,7 +119,7 @@ function draw() {
     cloudsGroup.setLifetimeEach(-1);
 
     //creator Information
-    text("created by Anshum Bhargav",width/2,20);
+    text("by Anshum Bhargav",width/2-50,50);
     
     if(touches.length>0 || mousePressedOver(restart)) {
       reset();
