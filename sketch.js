@@ -76,12 +76,7 @@ function setup() {
 
 function draw() {
   //trex.debug = true;
-  background("lightBlue");
-  stroke("black");
-  textSize(20);
-  fill("black");
-  text("Score: "+ score, width-100,20);
-  trex.setCollider("circle",0,0,40);
+  text();
   
   if (gameState===PLAY){
     score = score + Math.round(getFrameRate()/60);
@@ -211,3 +206,14 @@ function reset(){
   score = 0;
   
 }
+
+function text(){
+  background("lightBlue");
+  stroke("black");
+  textSize(20);
+  fill("black");
+  text("Score: "+ score, width-100,20);
+  trex.setCollider("circle",0,0,40);
+}
+
+
