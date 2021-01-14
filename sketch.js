@@ -75,6 +75,7 @@ function setup() {
 }
 
 function draw() {
+  background(255);
   //trex.debug = true;
   text();
   
